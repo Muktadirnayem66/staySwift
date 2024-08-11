@@ -20,8 +20,8 @@ bun dev
 
 
 
-- [Live URL]() 
-- [GithubRepo]() 
+- [Live URL](https://stay-swift-beige.vercel.app/) 
+- [GithubRepo](https://github.com/Muktadirnayem66/staySwift.git) 
 
 
 staySwift Project Overview - 
