@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Navbar from "@/components/Navbar";
+import { dbConnect } from "@/services/mongo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,9 +11,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  dbConnect()
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar sidebar={false} />
+        <main>
+        {children}
+        </main>
+        </body>
     </html>
   );
 }
